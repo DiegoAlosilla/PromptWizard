@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.example.promptwizard</id>
+    <name>Prompt Wizard</name>
+    <version>1.0</version>
+    <vendor email="your-email@example.com" url="http://www.example.com">Your Name</vendor>
+
+    <description>
+        Plugin to quickly search and select prompts to use with Copilot.
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Register the action -->
+    <actions>
+        <action id="com.example.promptwizard.actions.PromptPluginAction"
+                class="com.alosilla.promptwizard.actions.PromptPluginAction"
+                text="Open Prompt Wizard">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
